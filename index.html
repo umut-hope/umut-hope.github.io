@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio website showcasing projects, repositories, and professional background. Open for job opportunities.">
+    <title>Portfolio | Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-gradient"></div>
+    <div class="bg-grid"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">Portfolio</span>
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#repos" class="nav-link">Repositories</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <div class="hero-badge animate-in">
+                <span class="status-dot"></span>
+                Open to opportunities
+            </div>
+            <h1 class="hero-title animate-in">
+                Hi, I'm <span class="gradient-text" id="hero-name">Your Name</span>
+            </h1>
+            <p class="hero-subtitle animate-in" id="hero-title">Software Developer</p>
+            <p class="hero-description animate-in" id="hero-bio">
+                Passionate developer building impactful software. Explore my repositories and projects below.
+            </p>
+            <div class="hero-actions animate-in">
+                <a href="#repos" class="btn btn-primary">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                    View Repositories
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    Get In Touch
+                </a>
+            </div>
+            <div class="hero-stats animate-in" id="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" id="stat-repos">—</span>
+                    <span class="stat-label">Repositories</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" id="stat-stars">—</span>
+                    <span class="stat-label">Total Stars</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" id="stat-forks">—</span>
+                    <span class="stat-label">Total Forks</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="code-window animate-in">
+                <div class="code-header">
+                    <div class="code-dots">
+                        <span class="dot dot-red"></span>
+                        <span class="dot dot-yellow"></span>
+                        <span class="dot dot-green"></span>
+                    </div>
+                    <span class="code-title">profile.js</span>
+                </div>
+                <pre class="code-body"><code><span class="code-keyword">const</span> <span class="code-variable">developer</span> = {
+  <span class="code-property">name</span>: <span class="code-string" id="code-name">"Your Name"</span>,
+  <span class="code-property">role</span>: <span class="code-string" id="code-role">"Developer"</span>,
+  <span class="code-property">status</span>: <span class="code-string">"Open to work"</span>,
+  <span class="code-property">passions</span>: [
+    <span class="code-string">"Clean Code"</span>,
+    <span class="code-string">"Open Source"</span>,
+    <span class="code-string">"Problem Solving"</span>
+  ]
+};</code></pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">01</span>
+                <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-card glass-card">
+                    <div class="about-avatar" id="about-avatar">
+                        <div class="avatar-placeholder">
+                            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <p id="about-description">
+                            I'm a passionate software developer who loves building useful applications and contributing to open source.
+                            I'm currently looking for new opportunities where I can make an impact with my skills.
+                        </p>
+                        <div class="about-details">
+                            <div class="detail-item">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                <span id="about-location">Your Location</span>
+                            </div>
+                            <div class="detail-item">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                                <span id="about-company">Available for hire</span>
+                            </div>
+                            <div class="detail-item">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+                                <a href="#" id="about-github-link" target="_blank">github.com/username</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">02</span>
+                <h2 class="section-title">Skills & <span class="gradient-text">Technologies</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid" id="skills-grid">
+                <!-- Skills will be populated by JS based on repo languages -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Repositories Section -->
+    <section id="repos" class="section repos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">03</span>
+                <h2 class="section-title">My <span class="gradient-text">Repositories</span></h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">Explore my open-source projects and contributions</p>
+            </div>
+
+            <!-- Filter Bar -->
+            <div class="filter-bar" id="filter-bar">
+                <button class="filter-btn active" data-filter="all">All</button>
+            </div>
+
+            <!-- Repos Grid -->
+            <div class="repos-grid" id="repos-grid">
+                <div class="loading-state" id="repos-loading">
+                    <div class="spinner"></div>
+                    <p>Loading repositories...</p>
+                </div>
+            </div>
+
+            <div class="repos-cta" id="repos-cta" style="display: none;">
+                <a href="#" id="view-all-repos" class="btn btn-secondary" target="_blank">
+                    View All on GitHub
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">04</span>
+                <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">I'm currently open to new opportunities. Let's connect!</p>
+            </div>
+            <div class="contact-grid">
+                <a href="mailto:your@email.com" id="contact-email-link" class="contact-card glass-card">
+                    <div class="contact-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    </div>
+                    <h3>Email</h3>
+                    <p id="contact-email">your@email.com</p>
+                </a>
+                <a href="#" id="contact-github-card" class="contact-card glass-card" target="_blank">
+                    <div class="contact-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                    </div>
+                    <h3>GitHub</h3>
+                    <p id="contact-github">github.com/username</p>
+                </a>
+                <a href="#" id="contact-linkedin-card" class="contact-card glass-card" target="_blank">
+                    <div class="contact-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </div>
+                    <h3>LinkedIn</h3>
+                    <p id="contact-linkedin">Connect with me</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; <span id="footer-year">2026</span> <span id="footer-name">Your Name</span>. Built with ❤️</p>
+                <p class="footer-sub">Powered by GitHub Pages</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
