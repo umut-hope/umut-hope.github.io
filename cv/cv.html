@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Okan Umut Özen - CV</title>
+<meta name="author" content="Okan Umut Özen">
+<style>
+    @page { size: A4; margin: 10mm 14mm; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+        font-family: Calibri, Arial, sans-serif;
+        font-size: 10pt;
+        line-height: 1.28;
+        color: #1a1a1a;
+    }
+    a { color: inherit; text-decoration: none; }
+    .item-date a { color: #2e4a62; text-decoration: underline; text-underline-offset: 1.5pt; }
+
+    header { margin-bottom: 6pt; }
+    h1 { font-size: 21pt; font-weight: 700; letter-spacing: 0.2pt; }
+    .role { font-size: 12pt; color: #2e4a62; margin-top: 1pt; }
+    .contact { margin-top: 3pt; color: #333; font-size: 9.5pt; }
+    .contact span + span::before { content: " | "; color: #888; }
+
+    h2 {
+        font-size: 11pt;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.8pt;
+        color: #2e4a62;
+        border-bottom: 0.75pt solid #9aa9b6;
+        padding-bottom: 1.5pt;
+        margin: 8pt 0 4pt;
+    }
+
+    .item { margin-bottom: 4.5pt; break-inside: avoid; }
+    .item-head { display: flex; justify-content: space-between; gap: 12pt; }
+    .item-title { font-weight: 700; }
+    .item-date { white-space: nowrap; color: #333; }
+    .item-sub { color: #444; font-style: italic; }
+    ul { margin: 1.5pt 0 0 13pt; }
+    li { margin-bottom: 1pt; }
+
+    .skills p { margin-bottom: 2pt; }
+    .skills b { font-weight: 700; }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Okan Umut Özen</h1>
+    <p class="role">Software Engineer</p>
+    <p class="contact" id="contact">
+        <span>Tekirdağ, Turkey</span>
+        <span><a href="mailto:o.umut.ozenn@gmail.com">o.umut.ozenn@gmail.com</a></span>
+        <span><a href="https://umut-hope.github.io/">umut-hope.github.io</a></span>
+        <span><a href="https://github.com/umut-hope">github.com/umut-hope</a></span>
+        <span><a href="https://www.linkedin.com/in/okan-umut-%C3%B6zen-153a94305/">linkedin.com/in/okan-umut-özen-153a94305</a></span>
+    </p>
+</header>
+
+<h2>Summary</h2>
+<p>Software engineering graduate from Bahçeşehir University and former data science intern at NTT DATA Business Solutions. I build complete projects across web, machine learning, games and embedded systems, including two live, tested browser tools in TypeScript and Svelte. English C1.</p>
+
+<h2>Education</h2>
+<div class="item">
+    <div class="item-head">
+        <span><span class="item-title">B.Sc. Software Engineering</span>, Bahçeşehir University</span>
+        <span class="item-date">2022 – 2026</span>
+    </div>
+    <p>Capstone: RC car telemetry and remote control system.</p>
+</div>
+
+<h2>Experience</h2>
+<div class="item">
+    <div class="item-head">
+        <span><span class="item-title">Data Science Intern</span>, NTT DATA Business Solutions</span>
+        <span class="item-date">Mar 2025 – May 2025</span>
+    </div>
+    <ul>
+        <li>Supported data analysis, modeling and reporting processes.</li>
+        <li>Developed a fake news detection project using Microsoft Azure.</li>
+    </ul>
+</div>
+
+<h2>Projects</h2>
+<div class="item">
+    <div class="item-head">
+        <span><span class="item-title">Yaw-Match</span> <span class="item-sub">| TypeScript, Svelte, Vite, Vitest, Zod</span></span>
+        <span class="item-date"><a href="https://umut-hope.github.io/Yaw-Match/">Live demo</a> · <a href="https://github.com/umut-hope/Yaw-Match">GitHub</a></span>
+    </div>
+    <ul>
+        <li>Converts sensitivity between games with 360° distance matching, cm/360, eDPI and FOV-aware conversions, running entirely in the browser.</li>
+        <li>Built a games database with per-game yaw values, sources and trust labels; added shareable links, copyable config lines and unit tests.</li>
+    </ul>
+</div>
+
+<div class="item">
+    <div class="item-head">
+        <span><span class="item-title">Aim-Tune</span> <span class="item-sub">| TypeScript, Svelte, Vite, Vitest</span></span>
+        <span class="item-date"><a href="https://umut-hope.github.io/Aim-Tune/">Live demo</a> · <a href="https://github.com/umut-hope/Aim-Tune">GitHub</a></span>
+    </div>
+    <ul>
+        <li>Flick and tracking tests that recommend a sensitivity range in cm/360 for any game.</li>
+        <li>Splits tracking misses into ahead of and behind the target to reduce reaction-time bias.</li>
+    </ul>
+</div>
+
+<div class="item">
+    <div class="item-head">
+        <span><span class="item-title">RC Car Telemetry System</span> <span class="item-sub">| Python, Raspberry Pi, Arduino, TCP/IP, SQLite</span></span>
+        <span class="item-date"><a href="https://github.com/umut-hope/RC-Car-Project">GitHub</a></span>
+    </div>
+    <ul>
+        <li>Capstone project. Designed a 3-tier system (Arduino, Raspberry Pi, PC) communicating over USB serial and TCP/IP for real-time remote control.</li>
+        <li>Processed 6 IR sensors with debouncing and 4 wheel encoders on the Raspberry Pi to stream live telemetry, and built a CustomTkinter and Matplotlib dashboard for post-session analysis.</li>
+    </ul>
+</div>
+
+<div class="item">
+    <div class="item-head">
+        <span><span class="item-title">Autonomous Highway Driving with Deep Q-Network</span> <span class="item-sub">| Python, Stable-Baselines3, Gymnasium</span></span>
+        <span class="item-date"><a href="https://github.com/umut-hope/Autonomous-Highway-Driving-with-Deep-Q-Network">GitHub</a></span>
+    </div>
+    <ul>
+        <li>Trained a DQN agent to drive through dense multi-lane traffic while avoiding collisions.</li>
+        <li>Designed a reward balancing speed, lane efficiency and safety; built the training and evaluation pipeline.</li>
+    </ul>
+</div>
+
+<div class="item">
+    <div class="item-head">
+        <span><span class="item-title">Google Maps Business Finder</span> <span class="item-sub">| Python, FastAPI, Playwright, Docker</span></span>
+        <span class="item-date"><a href="https://github.com/umut-hope/GoogleMaps-Isletme-Bulucu">GitHub</a></span>
+    </div>
+    <ul>
+        <li>Collects business listings for a keyword and location and enriches them with public contact details from each business's website.</li>
+        <li>Asynchronous Playwright pipeline with live progress streamed over WebSockets; frontend and backend run as separate Docker Compose services.</li>
+    </ul>
+</div>
+
+<div class="item">
+    <div class="item-head">
+        <span><span class="item-title">Smart Restaurant Order System</span> <span class="item-sub">| Java 17, design patterns, UML</span></span>
+        <span class="item-date"><a href="https://github.com/umut-hope/Smart-Restaurant-Order-System">GitHub</a></span>
+    </div>
+    <ul>
+        <li>Applied GoF patterns (Strategy, Factory, Observer) and SOLID principles to build an extensible order-processing engine, documented with UML class, sequence and use case diagrams.</li>
+    </ul>
+</div>
+
+<div class="item">
+    <p><span class="item-title">Other projects:</span> German Traffic Sign Classifier (OpenCV, HOG, SVM/KNN), Tri-Jump and The Last Ember (Unity, C#), Project Zomboid mods (Lua).</p>
+</div>
+
+<h2>Skills and certificates</h2>
+<div class="skills">
+    <p><b>Programming languages:</b> Python, TypeScript, Java, C#, C++, SQL, Lua</p>
+    <p><b>Frameworks and libraries:</b> Svelte, FastAPI, Playwright, Unity, Stable-Baselines3, OpenCV, scikit-learn, Matplotlib</p>
+    <p><b>Tools:</b> Git, Docker, SQLite, Microsoft Azure, Vite, Vitest, Raspberry Pi, Arduino</p>
+    <p><b>Certificates:</b> Google Project Management: Foundations of Project Management, Project Initiation, Capstone (2023 – 2024)</p>
+    <p><b>Languages:</b> English (C1), German (A1), Turkish (native)</p>
+</div>
+
+<script>
+    // Private copies can add a phone number at print time with ?phone=...
+    // so it never has to be stored in this file.
+    const phone = new URLSearchParams(location.search).get("phone");
+    if (phone) {
+        const span = document.createElement("span");
+        span.textContent = phone;
+        const contact = document.getElementById("contact");
+        contact.insertBefore(span, contact.children[2]);
+    }
+</script>
+</body>
+</html>
