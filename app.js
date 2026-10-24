@@ -50,6 +50,14 @@
         return Object.prototype.hasOwnProperty.call(CONFIG.areas, area);
     }
 
+    // Records a click as an event in GoatCounter. Does nothing if the
+    // counter is blocked or not loaded yet.
+    function track(name) {
+        if (window.goatcounter && typeof window.goatcounter.count === "function") {
+            window.goatcounter.count({ path: name, title: name, event: true });
+        }
+    }
+
     // ---------- Static content from config ----------
     function populateConfig() {
         $("#hero-location").textContent = CONFIG.location;
@@ -66,6 +74,8 @@
         email.textContent = CONFIG.email;
 
         $("#footer-year").textContent = new Date().getFullYear();
+
+        $("#cv-btn").addEventListener("click", () => track(`cv-download${currentArea ? "-" + currentArea : ""}`));
 
         renderTimeline();
         renderSkills();
@@ -125,6 +135,7 @@
         renderProjects();
 
         if (updateUrl) {
+            track(`filter-${currentArea || "all"}`);
             const url = new URL(window.location.href);
             if (currentArea) url.searchParams.set("focus", currentArea);
             else url.searchParams.delete("focus");
