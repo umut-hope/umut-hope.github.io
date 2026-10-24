@@ -1,20 +1,24 @@
-# 🚀 Developer Portfolio
+# Okan Umut Özen — Portfolio
 
-A sleek, modern portfolio website that dynamically pulls your projects and profile data from the GitHub API. Zero build tools required — just edit one config file and deploy.
+Personal portfolio site, live at **https://umut-hope.github.io/**.
 
-## ✨ Features
+Plain HTML, CSS and JavaScript, no build step. Hosted on GitHub Pages.
 
-- **Live GitHub Integration** — Automatically fetches your repositories, avatar, stats, and profile info via the GitHub API
-- **Single-File Configuration** — All personal details are managed in `config.js`; no need to touch the HTML
-- **Language Filtering** — Filter displayed repos by programming language with dynamically generated filter buttons
-- **Animated Stats** — Repo count, stars, and forks animate into view with smooth easing
-- **Responsive Design** — Fully mobile-friendly with a collapsible hamburger menu
-- **Glassmorphism UI** — Modern glass-card effects, gradient accents, and subtle micro-animations
-- **Scroll Reveal Animations** — Elements fade in as you scroll using IntersectionObserver
-- **Pinning & Hiding Repos** — Pin specific repos to the top or hide ones you don't want shown
-- **Dark Theme** — Premium dark color scheme with vibrant gradient highlights
-- **No Dependencies** — Pure HTML, CSS, and vanilla JavaScript — no frameworks, no build step
+## Features
 
-## 📄 License
+- **Curated projects** — `projects.json` holds each project's summary, highlights, tech stack, areas, live demo and image
+- **Area filters** — Web, ML & Data, Games, Hardware, Java & OOP
+- **Focus links** — `?focus=web`, `?focus=ml`, `?focus=game`, `?focus=hardware`, `?focus=core` put the matching
+  projects first and change the hero text, so each application can link to the most relevant view
+- **More on GitHub** — repositories not listed in `projects.json` appear automatically from the GitHub API
+- **Responsive and accessible** — mobile menu, keyboard focus styles, reduced-motion support
 
-This project is open source and available under the [MIT License](LICENSE).
+## Editing
+
+| File | What it holds |
+|---|---|
+| `config.js` | Contact details, CV path, hero text per focus, about text, timeline, skills |
+| `projects.json` | Project cards |
+| `style.css` | Theme colors and layout (Nord-inspired dark theme) |
+
+To preview locally, serve the folder with any static server (opening `index.html` directly can't load `projects.json`).
