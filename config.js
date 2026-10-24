@@ -34,7 +34,7 @@ const CONFIG = {
         },
         ml: {
             headline: "Software engineer focused on machine learning.",
-            intro: "Data science intern at NTT DATA Business Solutions. My projects range from a reinforcement learning agent that drives in highway traffic to a computer vision classifier and a data collection pipeline.",
+            intro: "Former data science intern at NTT DATA Business Solutions. My projects range from a reinforcement learning agent that drives in highway traffic to a computer vision classifier and a data collection pipeline.",
         },
         game: {
             headline: "Game developer and gaming tools builder.",
