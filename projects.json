@@ -1,0 +1,216 @@
+[
+  {
+    "repo": "Aim-Tune",
+    "title": "Aim-Tune",
+    "summary": "Finds your ideal mouse sensitivity with a quick in-browser flick and tracking test, then gives the result in cm/360 for any game.",
+    "highlights": [
+      "Separates misses into ahead of and behind the target to reduce reaction-time noise",
+      "Recommended range shown on a ruler, with an A/B feel test"
+    ],
+    "tech": [
+      "TypeScript",
+      "Svelte",
+      "Vite",
+      "Vitest"
+    ],
+    "areas": [
+      "web",
+      "game"
+    ],
+    "demo": "https://umut-hope.github.io/Aim-Tune/",
+    "image": "img/projects/aim-tune.webp",
+    "featured": true
+  },
+  {
+    "repo": "Yaw-Match",
+    "title": "Yaw-Match",
+    "summary": "Converts mouse sensitivity between games so your aim feels the same everywhere. Works with cm/360, eDPI and FOV, and runs entirely in the browser.",
+    "highlights": [
+      "Games database with yaw values, sources and a trust label for each game",
+      "Shareable links and copyable console/config lines"
+    ],
+    "tech": [
+      "TypeScript",
+      "Svelte",
+      "Vite",
+      "Vitest",
+      "Zod"
+    ],
+    "areas": [
+      "web",
+      "game"
+    ],
+    "demo": "https://umut-hope.github.io/Yaw-Match/",
+    "image": "img/projects/yaw-match.webp",
+    "featured": true
+  },
+  {
+    "repo": "RC-Car-Project",
+    "title": "RC Car Telemetry System",
+    "summary": "My capstone project: real-time telemetry and remote control for an RC car, split across an Arduino, a Raspberry Pi and a PC client over TCP/IP and USB serial.",
+    "highlights": [
+      "Raspberry Pi reads 6 IR sensors and 4 wheel encoders and streams low-latency telemetry over TCP",
+      "Post-session dashboard charts speed profiles and encoder timelines from SQLite"
+    ],
+    "tech": [
+      "Python",
+      "Raspberry Pi",
+      "Arduino",
+      "TCP/IP",
+      "CustomTkinter",
+      "Matplotlib",
+      "SQLite"
+    ],
+    "areas": [
+      "hardware"
+    ],
+    "demo": "",
+    "image": "img/projects/rc-car.webp",
+    "featured": true
+  },
+  {
+    "repo": "Autonomous-Highway-Driving-with-Deep-Q-Network",
+    "title": "Autonomous Highway Driving (DQN)",
+    "summary": "A reinforcement learning agent that drives through dense highway traffic, keeping a good speed while avoiding collisions.",
+    "highlights": [
+      "Custom reward balancing speed, lane efficiency and safety",
+      "Epsilon-greedy exploration decaying from 1.0 to 0.05"
+    ],
+    "tech": [
+      "Python",
+      "Stable-Baselines3",
+      "Gymnasium",
+      "highway-env"
+    ],
+    "areas": [
+      "ml"
+    ],
+    "demo": "",
+    "image": "",
+    "featured": true,
+    "video": "img/projects/dqn-drive.mp4"
+  },
+  {
+    "repo": "GoogleMaps-Isletme-Bulucu",
+    "title": "Google Maps Business Finder",
+    "summary": "Collects business data from Google Maps for a keyword and location, then enriches it with emails and social links found on each business's website.",
+    "highlights": [
+      "FastAPI backend with live progress over WebSocket",
+      "Runs locally with Docker Compose (frontend and backend as separate services)"
+    ],
+    "tech": [
+      "Python",
+      "FastAPI",
+      "Playwright",
+      "WebSocket",
+      "SQLite",
+      "Docker"
+    ],
+    "areas": [
+      "web",
+      "ml"
+    ],
+    "demo": "",
+    "image": "img/projects/google-maps-finder.webp",
+    "featured": true,
+    "site": "https://umut-hope.github.io/GoogleMaps-Isletme-Bulucu/"
+  },
+  {
+    "repo": "German-Traffic-Sign-Classifier",
+    "title": "German Traffic Sign Classifier",
+    "summary": "Recognizes German traffic signs with classic computer vision and machine learning (HOG features with SVM and KNN), without neural networks.",
+    "highlights": [
+      "Full preprocessing pipeline and HOG feature extraction with OpenCV",
+      "SVM and KNN compared with confusion matrices"
+    ],
+    "tech": [
+      "Python",
+      "OpenCV",
+      "scikit-learn",
+      "NumPy"
+    ],
+    "areas": [
+      "ml"
+    ],
+    "demo": "",
+    "image": "img/projects/traffic-signs.webp",
+    "featured": true
+  },
+  {
+    "repo": "TheLastEmbers-UnityGame",
+    "title": "The Last Ember",
+    "summary": "An atmospheric 2D survival game about keeping a small campfire alive, as a metaphor for holding on to motivation.",
+    "tech": [
+      "C#",
+      "Unity 2D"
+    ],
+    "areas": [
+      "game"
+    ],
+    "demo": "",
+    "image": "img/projects/last-ember.webp",
+    "featured": false
+  },
+  {
+    "repo": "TriJump-UnityGame",
+    "title": "Tri-Jump",
+    "summary": "A vertical-climbing arcade game with physics-based jumps between rotating circles, procedural platform spawning and a camera that chases you upward.",
+    "tech": [
+      "C#",
+      "Unity 6",
+      "Input System"
+    ],
+    "areas": [
+      "game"
+    ],
+    "demo": "",
+    "image": "img/projects/tri-jump.webp",
+    "featured": false
+  },
+  {
+    "repo": "ProjectZomboid-Mods",
+    "title": "Project Zomboid Mods",
+    "summary": "Gameplay mods for Project Zomboid, such as Hope's Better Jams and Hope's Better Boulders.",
+    "tech": [
+      "Lua"
+    ],
+    "areas": [
+      "game"
+    ],
+    "demo": "",
+    "image": "img/projects/zomboid-mods.webp",
+    "featured": false
+  },
+  {
+    "repo": "Smart-Restaurant-Order-System",
+    "title": "Smart Restaurant Order System",
+    "summary": "An extensible order-processing engine in Java 17 built around GoF patterns (Strategy, Factory, Observer) and SOLID principles, documented with UML class, sequence and use case diagrams.",
+    "tech": [
+      "Java 17",
+      "Design patterns",
+      "SOLID",
+      "UML"
+    ],
+    "areas": [
+      "core"
+    ],
+    "demo": "",
+    "image": "img/projects/smart-restaurant-uml.webp",
+    "featured": false
+  },
+  {
+    "repo": "Food-Order-System",
+    "title": "Food Order System",
+    "summary": "A meal ordering system for a single restaurant. Uses a queue for order processing and a tree for menu management.",
+    "tech": [
+      "Java",
+      "Data structures"
+    ],
+    "areas": [
+      "core"
+    ],
+    "demo": "",
+    "image": "img/projects/food-order.webp",
+    "featured": false
+  }
+]
