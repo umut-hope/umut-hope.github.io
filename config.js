@@ -26,7 +26,7 @@ const CONFIG = {
     focusProfiles: {
         default: {
             headline: "Software engineer who builds things you can try.",
-            intro: "Recent graduate working across web, machine learning, games and embedded systems. Some of the projects below run live in your browser.",
+            intro: "Recent graduate working across web, machine learning and game development. Some of the projects below run live in your browser.",
         },
         web: {
             headline: "Web developer building fast, useful browser tools.",
@@ -41,8 +41,8 @@ const CONFIG = {
             intro: "Unity games in C#, mods in Lua, and browser tools that help players match and tune their aim across games.",
         },
         hardware: {
-            headline: "Software engineer working close to the hardware.",
-            intro: "Real-time telemetry and control for an RC car, from Arduino motor control and Raspberry Pi sensors to a PC dashboard.",
+            headline: "Software engineer with a hands-on hardware project.",
+            intro: "My capstone: real-time telemetry and control for an RC car, from Arduino motor control and Raspberry Pi sensors to a PC dashboard.",
         },
         core: {
             headline: "Software engineer with solid Java and OOP foundations.",
@@ -54,7 +54,7 @@ const CONFIG = {
 
     about: [
         "I'm a software engineer who enjoys building software end to end, from the first idea to a working, tested product. I like to understand a problem properly before writing code, and I care about clear structure, readable code and software that is pleasant to use.",
-        "I learn quickly and I'm comfortable moving between languages and areas, from web and backend to machine learning, games and embedded systems. I'm looking for a team where I can keep growing, take ownership of my work and contribute to real products.",
+        "I learn quickly and I'm comfortable moving between languages and areas, from web and backend to machine learning and games. I'm looking for a team where I can keep growing, take ownership of my work and contribute to real products.",
     ],
 
     // Experience and education, newest first.
@@ -69,7 +69,7 @@ const CONFIG = {
             period: "Mar 2025 – May 2025",
             title: "Data Science Intern",
             place: "NTT DATA Business Solutions",
-            note: "Supported data analysis, modeling and reporting. Built a fake news detector on Microsoft Azure.",
+            note: "Training in Python, Pandas and clean code. Worked on a fake news detection project on Microsoft Azure.",
         },
         {
             period: "2023 – 2024",
